@@ -2,7 +2,7 @@
   background-color: #F9F8FB;
 }
 .hero__body {
-  background-image: url(/titleimg/heroimg.png);
+  background-image: url(titleimg/heroimg.png);
   background-repeat: no-repeat;
   max-width: 1500px;
   height: auto;
