@@ -1,0 +1,266 @@
+
+$releway: 'Raleway', sans-serif;
+$pacifico: 'Pacifico', cursive;
+$grey: #262626;
+
+.hero {
+    background-color: #F9F8FB;
+    &__body {
+        background-image: url(/titleimg/heroimg.png);
+        background-repeat: no-repeat;
+        max-width: 1500px;
+        height: auto;
+        padding: 350px 0;
+        margin: 0 auto;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        .menu {
+            position: fixed;
+            z-index: 10;
+            max-width: inherit;
+            width: 100%;
+            top: 0;
+            .menu__body {
+                padding: 50px 165px;
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                .menu__logo {
+                    font-family: $pacifico;
+                    font-size: 50px;
+                    color: $grey;
+                }
+                .menu__nav {
+                    display: flex;
+                    align-items: center;
+                    width: 60%;
+                    input {
+                        opacity: 0;
+                    }
+                    .nav {
+                        display: flex;
+                        width: 80%;
+                        justify-content: space-around;
+                        li {
+                            list-style: none;
+                            a{
+                                margin-left: 5px;
+                                text-decoration: none;
+                                font-family: $releway;
+                                font-size: 16px;
+                                font-weight: 700;
+                                color: $grey;
+                                padding: 5px 0 0 0;
+                                &:hover {
+                                    border-top: 2px solid #FF6033 ;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .heroblock {
+            padding: 0 0 0 165px;
+            &__body {
+                max-width: 400px;
+                .heroblock__title{
+                    color: $grey;
+                    font-family: $releway;
+                    font-weight: 800;
+                    font-size: 60px;
+                    margin-bottom: 30px;
+                }
+                .heroblock__text {
+                    font-family:$releway;
+                    font-weight: 300;
+                    color: $grey;
+                    font-size: 17px;
+                    margin-bottom: 30px;
+                }
+                .heroblock__button {
+                    width: 200px;
+                    height: 56px;
+                    background-color: #FF6033;
+                    box-shadow: 0 0 7px rgb(38, 38, 38, 0.4);
+                    a{
+                        display: block;
+                        padding: 17px 0;
+                        text-align: center;
+                        text-decoration: none;
+                        color: white;
+                        font-family: $releway;
+                        font-weight: 300;
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+        .hero__footer {
+            width: 100%;
+            position: absolute;
+            bottom: 50px;
+            display: flex;
+            justify-content: center;
+        }
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .hero{
+        &__body{
+            max-width: 1200px;
+            background-size: cover;
+        }
+    }
+}
+    @media screen and (max-width: 992px){
+        .hero{
+            &__body{
+                max-width: 992px;
+                background-image: none;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .heroblock {
+                    padding: 0;
+                    &__body{
+                        text-align: center;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                    }
+                }
+            }
+        }
+    
+    }
+   
+    @media screen and (max-width: 576px){
+        .hero {
+            background-color: #F9F8FB;
+            &__body {
+                padding: 150px 0;
+                .heroblock {
+                    &__body{
+                        margin: 0 5px;
+                        .heroblock__title{
+                            font-size: 45px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 768px){
+        .hero {
+            &__body {
+            
+                .menu {
+                    position: fixed;
+                    z-index: 10;
+                    max-width: inherit;
+                    width: 100%;
+                    top: 0;
+                    .menu__body {
+                        padding: 0;
+                        display: flex;
+                        justify-content: space-between;
+                        flex-wrap: wrap;
+                        .menu__logo {
+                            font-family: $pacifico;
+                            font-size: 50px;
+                            color: $grey;
+                            padding: 0px 0 0 20px;
+                        }
+                        .menu__nav {
+                            position: absolute;
+                            width: 100%;
+                            top
+                            input {
+                                opacity: 1;
+                            }
+                            input:checked~label>span {
+                                transform: rotate(45deg);
+                               
+                                transition: 0.2s;
+                            }
+                            input:checked~label>span::after {
+                                transform: rotate(90deg);
+                                top: 0;
+                                transition: 0.2s;
+                            }
+                            input:checked~label>span::before {
+                                opacity: 0;
+                            }
+                            input:checked~ .nav{
+                                visibility: visible;
+                            }
+                            label {
+                                position: absolute;
+                                top: 30px;
+                                right: 40px;
+                                width: 30px;
+                                height: 30px;
+                                span, span::after, span::before {
+                                    display: block;
+                                    position: absolute;
+                                    width: 100%;
+                                    height: 3px;
+                                    background-color: black;
+                                    transition-duration: .25s;
+                                }
+                                span::after {
+                                    content: '';
+                                    top: 14px;
+                                }
+                                span::before{
+                                    content: '';
+                                    top: 27px;
+                                }
+                            }
+                            .nav {
+                                margin: 0;
+                                padding: 0;
+                                display: flex;
+                                flex-direction: column;
+                                text-align: center;
+                                visibility: hidden;
+                                width: 100%;
+                                li {
+                                    height: 75px;
+                                    list-style: none;
+                                    width: 100%;
+                                    display: flex;
+                                    justify-content: center;
+                                    border-bottom:2px solid white ;
+                                    a{
+                                        background-color: #00C4C4;
+                                        width: 100%;
+                                        display: block;
+                                        text-decoration: none;
+                                        font-family: $releway;
+                                        font-size: 16px;
+                                        font-weight: 700;
+                                        color: $grey;
+                                        padding: 25px 0 25px 0;
+                                        &:hover {
+                                            border-top:none ;
+                                            background-color: #009494;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+               
+                .hero__footer {
+                    display: none;
+                }
+            }
+        }
+    }

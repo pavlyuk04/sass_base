@@ -1,0 +1,110 @@
+.services {
+  background-color: #70BFFF;
+  height: auto;
+}
+.services__body {
+  padding: 160px 0;
+  height: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.services__body .services__block {
+  padding-left: 15.3333333333%;
+}
+.services__body .services__block__button a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 400px;
+  height: 100px;
+  margin-bottom: 20px;
+  text-decoration: none;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+.services__body .services__block__button a .button__text {
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+  color: #262626;
+  font-weight: 700;
+  text-align: center;
+  width: 75%;
+}
+.services__body .services__block__button a .button__img {
+  width: 100px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-left: 1px solid black;
+}
+.services__body .services__text {
+  padding-right: 11%;
+  position: relative;
+}
+.services__body .services__text h3 {
+  font-family: "Raleway", sans-serif;
+  color: white;
+  font-size: 90px;
+  font-weight: 700;
+  position: absolute;
+  z-index: 1;
+  top: 100px;
+  left: -70px;
+}
+.services__body .services__text img {
+  position: relative;
+}
+
+@media screen and (max-width: 1300px) {
+  .services__body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .services__body .services__block {
+    order: 2;
+    padding: 0;
+  }
+  .services__body .services__text {
+    padding: 0 0 50px 0;
+    position: static;
+  }
+  .services__body .services__text img {
+    display: none;
+  }
+  .services__body .services__text h3 {
+    margin: 0;
+    position: static;
+    order: 1;
+  }
+}
+@media screen and (max-width: 768px) {
+  .services__body .services__text {
+    position: static;
+  }
+  .services__body .services__text h3 {
+    font-size: 60px;
+    margin: 0;
+    position: static;
+    order: 1;
+  }
+}
+@media screen and (max-width: 576px) {
+  .services__body {
+    padding: 80px 0;
+    margin: 0 0 5px 0;
+  }
+  .services__body .services__block__button a {
+    width: 280px;
+    margin-bottom: 7px;
+  }
+  .services__body .services__text h3 {
+    font-size: 40px;
+  }
+}
+
+/*# sourceMappingURL=services.css.map */

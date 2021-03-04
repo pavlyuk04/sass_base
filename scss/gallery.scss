@@ -1,0 +1,223 @@
+.gallery{
+    background-color:#FFE92F;
+    height: auto;
+    &__body{
+        padding: 110px 0;
+        height: 100%;
+        max-width: 1500px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        .gallery__title {
+            padding: 0 10px 30px 10px;
+            max-width: 570px;
+            text-align: center;
+            .title__header {
+                font-family: 'Releway', sans-serif;
+                font-weight: 700;
+                font-size: 90px;
+                color: #262626;
+            }
+            .title__text {
+                font-family: 'Releway', sans-serif;
+                font-size: 17px;
+                font-weight: 300;
+                color: #262626;
+                padding-top: 20px;
+            }
+        }
+        .gallery__images{
+            width: 90%;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            .images-big {
+                width: 65%;
+            }
+            img{
+                margin-bottom: 20px;
+            }
+            .images-bot{
+                width: 49%;
+            }
+            .images__column {
+                display: flex;
+                flex-direction: column;
+                width: 33%;
+                img{
+                    margin-bottom:20px ;
+                    width: 100%;
+                }
+            }
+        }
+        .gallery__button {
+            margin-top: 50px;
+            width: 200px;
+            height: 56px;
+            background-color: #5585A2;
+            a {
+                display: block;
+                font-family: 'Releway', sans-serif;
+                font-size: 20px;
+                font-weight: 300;
+                color: white;
+                text-align: center;
+                text-decoration: none;
+                padding: 20px 0;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+   .gallery{
+    background-color:#FFE92F;
+    height: auto;
+    &__body{
+        padding: 110px 0;
+        height: 100%;
+        max-width: 1500px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        .gallery__title {
+            padding: 0 10px 30px 10px;
+            max-width: 570px;
+            text-align: center;
+            .title__header {
+                font-family: 'Releway', sans-serif;
+                font-weight: 700;
+                font-size: 60px;
+                color: #262626;
+            }
+            .title__text {
+                font-family: 'Releway', sans-serif;
+                font-size: 15px;
+                font-weight: 300;
+                color: #262626;
+                padding-top: 20px;
+            }
+        }
+        .gallery__images{
+            width: 90%;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            .images-big {
+                width: 65%;
+            }
+            img{
+                margin-bottom: 10px;
+            }
+            .images-bot{
+                width: 49%;
+            }
+            .images__column {
+                display: flex;
+                flex-direction: column;
+                width: 33%;
+                img{
+                    margin-bottom:10px ;
+                    width: 100%;
+                }
+            }
+        }
+        .gallery__button {
+            margin-top: 50px;
+            width: 200px;
+            height: 56px;
+            background-color: #5585A2;
+            a {
+                display: block;
+                font-family: 'Releway', sans-serif;
+                font-size: 20px;
+                font-weight: 300;
+                color: white;
+                text-align: center;
+                text-decoration: none;
+                padding: 20px 0;
+            }
+        }
+    }
+}
+}
+@media screen and (max-width: 576px){
+    .gallery{
+        background-color:#FFE92F;
+        height: auto;
+        &__body{
+            padding: 50px 0;
+            height: 100%;
+            max-width: 1500px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            .gallery__title {
+                padding: 0 10px 30px 10px;
+                max-width: 570px;
+                text-align: center;
+                .title__header {
+                    font-family: 'Releway', sans-serif;
+                    font-weight: 700;
+                    font-size: 40px;
+                    color: #262626;
+                }
+                .title__text {
+                    font-family: 'Releway', sans-serif;
+                    font-size: 15px;
+                    font-weight: 300;
+                    color: #262626;
+                    padding-top: 20px;
+                }
+            }
+            .gallery__images{
+                width: 90%;
+                display: flex;
+                justify-content: space-around;
+                flex-wrap: wrap;
+                .images-big {
+                    width: 65%;
+                }
+                img{
+                    margin-bottom: 2px;
+                }
+                .images-bot{
+                    width: 49%;
+                }
+                .images__column {
+                    display: flex;
+                    flex-direction: column;
+                    width: 33%;
+                    img{
+                        margin-bottom:2px ;
+                        width: 100%;
+                    }
+                }
+            }
+            .gallery__button {
+                margin-top: 50px;
+                width: 200px;
+                height: 56px;
+                background-color: #5585A2;
+                a {
+                    display: block;
+                    font-family: 'Releway', sans-serif;
+                    font-size: 20px;
+                    font-weight: 300;
+                    color: white;
+                    text-align: center;
+                    text-decoration: none;
+                    padding: 20px 0;
+                }
+            }
+        }
+    }
+    
+}
